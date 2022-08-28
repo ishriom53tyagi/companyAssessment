@@ -1,6 +1,7 @@
 let express = require('express');
 let cors = require('cors');
 let bodyParser = require('body-parser');
+const dbConfig = require("./database/query");
 
 // Express Route
 const companyRoute = require('../backend/routes/company')
@@ -16,8 +17,10 @@ app.use('/api/company',companyRoute)
 
 // PORT
 const port = process.env.PORT || 4000;
-const server = app.listen(port, () => {
-console.log('Connected to port ' + port)
+
+const server = app.listen(port, async () => {
+    await dbConfig.CreateTable();
+    console.log('Connected to port ' + port)
 })
 
 // 404 Error
