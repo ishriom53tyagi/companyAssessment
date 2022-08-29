@@ -8,7 +8,7 @@ const pool = new Pool({
   port: 5432,
 })
 
-CreateTable = async () => {
+const CreateTable = async () => {
     try {
         await pool.query(`
             CREATE TABLE company (
