@@ -7,7 +7,6 @@ In the project directory, you can run:
 
 ### `npm start`
 
-=======
 ## Change Your DB credentials 
 ### Path => backend/database/query.js
 ```
