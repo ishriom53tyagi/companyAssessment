@@ -7,6 +7,21 @@ In the project directory, you can run:
 
 ### `npm start`
 
+=======
+## Change Your DB credentials 
+### Path => backend/database/query.js
+```
+{
+  user: 'yourusername',
+  host: 'localhost',
+  database: 'api',
+  password: 'yourpassword',
+  port: 5432,
+}
+
+```
+
+>>>>>>> 4a699175d8a8cf61b05f1997e0ab15bd9563e29c
 ## Basic SetUp
 
 #### ```git clone https://github.com/ishriom53tyagi/companyAssessment.git```
