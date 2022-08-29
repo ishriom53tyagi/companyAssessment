@@ -7,6 +7,18 @@ In the project directory, you can run:
 
 ### `npm start`
 
+## DB Setup
+```
+{
+  user: 'me',
+  host: 'localhost',
+  database: 'api',
+  password: 'password',
+  port: 5432,
+}
+
+```
+
 ## Basic SetUp
 
 #### ```git clone https://github.com/ishriom53tyagi/companyAssessment.git```
