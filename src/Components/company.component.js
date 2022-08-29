@@ -16,7 +16,7 @@ const Company = () => {
 			axios
 			.post("http://localhost:4000/api/company/getDetails", { key : value })
 			.then((res) => {
-				if(res.status == 200) {
+				if(res.status === 200) {
 				callback(res.data)
 				}else {
 				callback([]);
@@ -37,14 +37,14 @@ const onChange = () => {
     axios
     .post("http://localhost:4000/api/company/submit",companyName)
     .then((res) => {
-      if(res.status == 200) {
+      if(res.status === 200) {
         navigate("/company/list");
       }
       
     })
     .catch((err) => {
 
-      if(err.response.status == 409 ) {
+      if(err.response.status === 409 ) {
         alert("Company Already Added! Please Select Another One")
       }
       console.log(err, "error");

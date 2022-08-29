@@ -1,10 +1,10 @@
 const Pool = require('pg').Pool
 
 const pool = new Pool({
-  user: 'me',
+  user: 'yourusername',
   host: 'localhost',
   database: 'api',
-  password: 'password',
+  password: 'yourpassword',
   port: 5432,
 })
 
@@ -26,4 +26,4 @@ const CreateTable = async () => {
  
 }
 
-module.exports =  { CreateTable }
+module.exports =  { CreateTable , pool }

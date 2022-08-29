@@ -3,20 +3,12 @@ const { JSDOM } = jsdom;
 const axios = require('axios').default;
 const express = require("express")
 const router = express.Router();
-var FormData = require('form-data');
-
-const Pool = require('pg').Pool
-const pool = new Pool({
-  user: 'me',
-  host: 'localhost',
-  database: 'api',
-  password: 'password',
-  port: 5432,
-})
+const FormData = require('form-data');
+const { pool } = require("../database/query")
 
 router.post("/getDetails", (req, res, next) => {
 
-    var data = new FormData();
+    let data = new FormData();
     data.append('search',  `${req.body.key}`);
     data.append('filter', 'company');
 

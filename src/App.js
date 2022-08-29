@@ -55,6 +55,7 @@ const App = () => {
             <Col md={12}>
               <div className="wrapper">
                 <Routes>
+                  <Route path="/" element = { <Company/>} />
                   <Route path="/company/list" element = { <CompanyList/>} />
                   <Route path="/company" element = { <Company/>} />
                 </Routes>
