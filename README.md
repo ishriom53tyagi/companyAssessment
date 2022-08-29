@@ -20,8 +20,6 @@ In the project directory, you can run:
 }
 
 ```
-
->>>>>>> 4a699175d8a8cf61b05f1997e0ab15bd9563e29c
 ## Basic SetUp
 
 #### ```git clone https://github.com/ishriom53tyagi/companyAssessment.git```
