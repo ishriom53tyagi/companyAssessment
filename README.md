@@ -7,13 +7,14 @@ In the project directory, you can run:
 
 ### `npm start`
 
-## DB Setup
+## Change Your DB credentials 
+## Path => backend/database/query.js
 ```
 {
-  user: 'me',
+  user: 'yourusername',
   host: 'localhost',
   database: 'api',
-  password: 'password',
+  password: 'yourpassword',
   port: 5432,
 }
 
